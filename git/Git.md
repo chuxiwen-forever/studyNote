@@ -70,11 +70,21 @@
 
 查看分支  git branch -v
 
+> 查看全部分支包括远程   git branch -a
+>
+> 查看远程分支名称 git branch -r
+
 创建分支 git branch "分支名称"
 
 切换分支  git checkout "分支名称"
 
- 合并分支 git merge "分支名称"
+合并分支 git merge "分支名称"
+
+删除分支 git branch -D "分支名称"
+
+改变分支名称 git branch -m "旧名" "新名"
+
+
 
 
 
@@ -86,7 +96,15 @@
 
 把本地库的文件推送到远程  git push "别名" "分支"
 
+> 远程和本地都只有一个分支 git push
+
 克隆远程代码 git clone "仓库地址"
+
+推送新的分支到远程  git push --set-upstream "别名" "分支名称"
+
+删除远程分支 git push "别名" --delete "分支名称"
+
+
 
 
 
